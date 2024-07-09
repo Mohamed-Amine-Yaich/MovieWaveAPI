@@ -7,7 +7,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import * as mongoose from 'mongoose';
 
 import { Query } from 'express-serve-static-core';
-import { Movie } from './schemas/favoriteMovie.schema';
+import { Movie } from './schemas/movie.schema';
 
 @Injectable()
 export class MovieService {

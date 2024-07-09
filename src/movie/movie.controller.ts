@@ -10,13 +10,13 @@ import {
   Req,
   UseGuards,
 } from '@nestjs/common';
-import { CreateFavoriteMovieDto } from './dto/add-favorite-movie.dto';
-import { UpdateFavoriteMovieDto } from './dto/update-favorite-movie.dto';
+import { CreateFavoriteMovieDto } from './dto/add-movie.dto';
+import { UpdateFavoriteMovieDto } from './dto/update-movie.dto';
 
 import { Query as ExpressQuery } from 'express-serve-static-core';
 import { AuthGuard } from '@nestjs/passport';
 import { MovieService } from './movie.service';
-import { Movie } from './schemas/favoriteMovie.schema';
+import { Movie } from './schemas/movie.schema';
 
 @Controller('movies')
 export class MovieController {
