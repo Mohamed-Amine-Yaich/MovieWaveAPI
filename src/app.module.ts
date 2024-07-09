@@ -5,6 +5,7 @@ import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AuthModule } from './auth/auth.module';
 import { MovieModule } from './movie/movie.module';
+import { FavoriteModule } from './favorite/favorite.module';
 
 @Module({
   imports: [
@@ -14,7 +15,8 @@ import { MovieModule } from './movie/movie.module';
     }),
     MongooseModule.forRoot(process.env.DB_URI),
     AuthModule,
-    MovieModule
+    MovieModule,
+    FavoriteModule
   ],
   controllers: [AppController],
   providers: [AppService],

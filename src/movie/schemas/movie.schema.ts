@@ -1,11 +1,11 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-
+import { Document } from 'mongoose';
 
 
 @Schema({
   timestamps: true,
 })
-export class Movie {
+export class Movie extends Document{
 
   @Prop()
   readonly Awards: string;
