@@ -17,13 +17,15 @@ export class MovieService {
   ) { }
 
   async findAll(query: Query): Promise<Movie[]> {
-    // find all favorite movies for login user
-    const favMovies = []
-    return favMovies;
+    const movies = await this.Movie.find();
+    return movies;
   }
 
   async create(movie: Movie): Promise<Movie> {
-
+    const   movieExist  = await this.Movie.findOne({imdbID:movie.imdbID}) 
+    if(movieExist) {
+      return movieExist
+    }
     const res = await this.Movie.create(movie);
     return res;
   }
@@ -34,7 +36,7 @@ export class MovieService {
     if (!isValidId) {
       throw new BadRequestException('Please enter correct id.');
     }
-
+  //or findone {imdbID:id} 
     const movie = await this.Movie.findById(id);
 
     if (!movie) {
@@ -45,10 +47,11 @@ export class MovieService {
   }
 
   async updateById(id: string, movie: Movie): Promise<Movie> {
-    return await this.Movie.findByIdAndUpdate(id, movie, {
+    const updatedMovie = await this.Movie.findByIdAndUpdate(id, movie, {
       new: true,
       runValidators: true,
     });
+    return updatedMovie
   }
 
   async deleteById(id: string): Promise<Movie> {

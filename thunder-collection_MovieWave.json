@@ -1,0 +1,213 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "MovieWave",
+    "collectionId": "17cb273f-f63d-4f47-86f0-ef8ef664e7e0",
+    "dateExported": "2024-07-09T14:57:17.939Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "f9f262ce-482a-407c-bf51-b33627ff4f92",
+            "name": "movie",
+            "containerId": "",
+            "created": "2024-07-09T13:01:11.345Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d56a7dbf-075d-45ae-b4ca-dfb7690eba89",
+            "name": "favorite",
+            "containerId": "",
+            "created": "2024-07-09T13:34:10.932Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "bf67d6c3-34c9-4d84-b66d-bc35d60377ad",
+            "name": "auth",
+            "containerId": "",
+            "created": "2024-07-09T13:02:04.311Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "5fbf1bd5-2e9c-43c4-bc60-4600ccf4b809",
+            "colId": "17cb273f-f63d-4f47-86f0-ef8ef664e7e0",
+            "containerId": "f9f262ce-482a-407c-bf51-b33627ff4f92",
+            "name": "add",
+            "url": "http://localhost:3000/movies",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-09T13:01:21.041Z",
+            "modified": "2024-07-09T14:40:30.715Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQzNzY3OTQxN2UzNThkNWQ1YjA3MCIsImlhdCI6MTcyMDUzNDEyMCwiZXhwIjoxNzI1NzE4MTIwfQ.N26xmdO1tjB8RsgAeSYtFSR0a8UNjb7FvnSvWC5Qla0"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\"Title\":\"Avenger\",\"Year\":\"2006\",\"Rated\":\"Not Rated\",\"Released\":\"09 Apr 2006\",\"Runtime\":\"92 min\",\"Genre\":\"Thriller\",\"Director\":\"Robert Markowitz\",\"Writer\":\"Alan Sharp, Frederick Forsyth\",\"Actors\":\"Sam Elliott, Timothy Hutton, James Cromwell\",\"Plot\":\"A C.I.A. Agent steps in to stop a former Special Forces Operative on a for-hire mission that poses a global threat.\",\"Language\":\"English\",\"Country\":\"United States\",\"Awards\":\"N/A\",\"Poster\":\"https://m.media-amazon.com/images/M/MV5BMTMzMjMwMjcyNl5BMl5BanBnXkFtZTcwNTA1NDgzMQ@@._V1_SX300.jpg\",\"Ratings\":[{\"Source\":\"Internet Movie Database\",\"Value\":\"5.6/10\"}],\"Metascore\":\"N/A\",\"imdbRating\":\"5.6\",\"imdbVotes\":\"1,026\",\"imdbID\":\"tt0473445\",\"Type\":\"movie\",\"DVD\":\"01 Apr 2012\",\"BoxOffice\":\"N/A\",\"Production\":\"N/A\",\"Website\":\"N/A\",\"Response\":\"True\"}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3af1deec-9b15-4ecf-95db-4c7d172b7fc3",
+            "colId": "17cb273f-f63d-4f47-86f0-ef8ef664e7e0",
+            "containerId": "d56a7dbf-075d-45ae-b4ca-dfb7690eba89",
+            "name": "add",
+            "url": "http://localhost:3000/favorite/668d3b9e33a765fa7093ef6d",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-09T13:34:10.932Z",
+            "modified": "2024-07-09T14:37:57.734Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQzNzY3OTQxN2UzNThkNWQ1YjA3MCIsImlhdCI6MTcyMDUzNDEyMCwiZXhwIjoxNzI1NzE4MTIwfQ.N26xmdO1tjB8RsgAeSYtFSR0a8UNjb7FvnSvWC5Qla0"
+                }
+            ]
+        },
+        {
+            "_id": "efd0302b-8cef-474a-b9e4-ad86d85f5700",
+            "colId": "17cb273f-f63d-4f47-86f0-ef8ef664e7e0",
+            "containerId": "bf67d6c3-34c9-4d84-b66d-bc35d60377ad",
+            "name": "signup",
+            "url": "http://localhost:3000/auth/signup",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-07-09T13:02:12.937Z",
+            "modified": "2024-07-09T13:13:11.861Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\" :\"amineacteol@gmail.com\",\n  \"password\":\"123456\",\n  \"name\":\"amineacteol\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a0f68d48-9351-4060-a335-eb73b81680fc",
+            "colId": "17cb273f-f63d-4f47-86f0-ef8ef664e7e0",
+            "containerId": "f9f262ce-482a-407c-bf51-b33627ff4f92",
+            "name": "get",
+            "url": "http://localhost:3000/movies/668d4d8b0ef5af7ebb546cf1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-07-09T13:11:53.894Z",
+            "modified": "2024-07-09T14:47:53.734Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQzNzY3OTQxN2UzNThkNWQ1YjA3MCIsImlhdCI6MTcyMDUzNDEyMCwiZXhwIjoxNzI1NzE4MTIwfQ.N26xmdO1tjB8RsgAeSYtFSR0a8UNjb7FvnSvWC5Qla0"
+                }
+            ]
+        },
+        {
+            "_id": "e256ce05-5114-4f86-89f0-a5e7f41b765d",
+            "colId": "17cb273f-f63d-4f47-86f0-ef8ef664e7e0",
+            "containerId": "d56a7dbf-075d-45ae-b4ca-dfb7690eba89",
+            "name": "get",
+            "url": "http://localhost:3000/favorite",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-07-09T13:34:10.933Z",
+            "modified": "2024-07-09T14:37:49.187Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQzNzY3OTQxN2UzNThkNWQ1YjA3MCIsImlhdCI6MTcyMDUzNDEyMCwiZXhwIjoxNzI1NzE4MTIwfQ.N26xmdO1tjB8RsgAeSYtFSR0a8UNjb7FvnSvWC5Qla0"
+                }
+            ]
+        },
+        {
+            "_id": "648a2d2b-d3d5-4f90-8551-942e88cb460a",
+            "colId": "17cb273f-f63d-4f47-86f0-ef8ef664e7e0",
+            "containerId": "bf67d6c3-34c9-4d84-b66d-bc35d60377ad",
+            "name": "login",
+            "url": "http://localhost:3000/auth/login",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-07-09T13:02:18.200Z",
+            "modified": "2024-07-09T13:13:47.228Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\" :\"amineacteol@gmail.com\",\n  \"password\":\"123456\"\n\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "95b4e689-7c3f-413e-b5c5-734777e3f0ca",
+            "colId": "17cb273f-f63d-4f47-86f0-ef8ef664e7e0",
+            "containerId": "f9f262ce-482a-407c-bf51-b33627ff4f92",
+            "name": "update",
+            "url": "http://localhost:3000/movies/668d3b9e33a765fa7093ef6d",
+            "method": "PATCH",
+            "sortNum": 30000,
+            "created": "2024-07-09T13:11:56.698Z",
+            "modified": "2024-07-09T14:43:49.251Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQzNzY3OTQxN2UzNThkNWQ1YjA3MCIsImlhdCI6MTcyMDUzNDEyMCwiZXhwIjoxNzI1NzE4MTIwfQ.N26xmdO1tjB8RsgAeSYtFSR0a8UNjb7FvnSvWC5Qla0"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\"Title\":\"Amine\",\"Year\":\"2006\",\"Rated\":\"Not Rated\",\"Released\":\"09 Apr 2006\",\"Runtime\":\"92 min\",\"Genre\":\"Thriller\",\"Director\":\"Robert Markowitz\",\"Writer\":\"Alan Sharp, Frederick Forsyth\",\"Actors\":\"Sam Elliott, Timothy Hutton, James Cromwell\",\"Plot\":\"A C.I.A. Agent steps in to stop a former Special Forces Operative on a for-hire mission that poses a global threat.\",\"Language\":\"arabic\",\"Country\":\"United States\",\"Awards\":\"N/A\",\"Poster\":\"https://m.media-amazon.com/images/M/MV5BMTMzMjMwMjcyNl5BMl5BanBnXkFtZTcwNTA1NDgzMQ@@._V1_SX300.jpg\",\"Ratings\":[{\"Source\":\"Internet Movie Database\",\"Value\":\"5.6/10\"}],\"Metascore\":\"N/A\",\"imdbRating\":\"5.6\",\"imdbVotes\":\"1,026\",\"imdbID\":\"tt0473445\",\"Type\":\"movie\",\"DVD\":\"01 Apr 2012\",\"BoxOffice\":\"N/A\",\"Production\":\"N/A\",\"Website\":\"N/A\",\"Response\":\"True\"}",
+                "form": []
+            }
+        },
+        {
+            "_id": "88af802f-aa44-4ada-a55e-c43a7434a8d3",
+            "colId": "17cb273f-f63d-4f47-86f0-ef8ef664e7e0",
+            "containerId": "f9f262ce-482a-407c-bf51-b33627ff4f92",
+            "name": "getAll",
+            "url": "http://localhost:3000/movies",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-07-09T14:46:44.306Z",
+            "modified": "2024-07-09T14:47:28.929Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQzNzY3OTQxN2UzNThkNWQ1YjA3MCIsImlhdCI6MTcyMDUzNDEyMCwiZXhwIjoxNzI1NzE4MTIwfQ.N26xmdO1tjB8RsgAeSYtFSR0a8UNjb7FvnSvWC5Qla0"
+                }
+            ]
+        },
+        {
+            "_id": "395c99a1-7522-4bbf-bd63-378c4bce885d",
+            "colId": "17cb273f-f63d-4f47-86f0-ef8ef664e7e0",
+            "containerId": "f9f262ce-482a-407c-bf51-b33627ff4f92",
+            "name": "delete",
+            "url": "http://localhost:3000/movies/668d3b9033a765fa7093ef6a",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-07-09T13:12:02.594Z",
+            "modified": "2024-07-09T14:45:18.812Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQzNzY3OTQxN2UzNThkNWQ1YjA3MCIsImlhdCI6MTcyMDUzNDEyMCwiZXhwIjoxNzI1NzE4MTIwfQ.N26xmdO1tjB8RsgAeSYtFSR0a8UNjb7FvnSvWC5Qla0"
+                }
+            ]
+        },
+        {
+            "_id": "2a1a3164-dfab-46d4-a43b-a2f00ac4d665",
+            "colId": "17cb273f-f63d-4f47-86f0-ef8ef664e7e0",
+            "containerId": "d56a7dbf-075d-45ae-b4ca-dfb7690eba89",
+            "name": "delete",
+            "url": "http://localhost:3000/favorite/668d3b9e33a765fa7093ef6d",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-07-09T13:34:10.935Z",
+            "modified": "2024-07-09T14:55:53.984Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQzNzY3OTQxN2UzNThkNWQ1YjA3MCIsImlhdCI6MTcyMDUzNDEyMCwiZXhwIjoxNzI1NzE4MTIwfQ.N26xmdO1tjB8RsgAeSYtFSR0a8UNjb7FvnSvWC5Qla0"
+                }
+            ]
+        }
+    ],
+    "ref": "j41o8WkzUrZV1N-OvksUZNIfQs8Lvo0XWLazsSCeTxrTbmTu_dYYXmooL8mIIpGAp_C9faNeBnqutP88X-pfSg"
+}

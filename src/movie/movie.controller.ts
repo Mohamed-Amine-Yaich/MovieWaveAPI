@@ -4,6 +4,7 @@ import {
   Delete,
   Get,
   Param,
+  Patch,
   Post,
   Put,
   Query,
@@ -23,6 +24,7 @@ export class MovieController {
   constructor(private movieService: MovieService) { }
 
   @Get()
+  @UseGuards(AuthGuard()) 
   async getAllMovies(@Query() query: ExpressQuery): Promise<Movie[]> {
     return this.movieService.findAll(query);
   }
@@ -31,12 +33,13 @@ export class MovieController {
   @UseGuards(AuthGuard()) 
   async createMovie(
     @Body()
-    movie: CreateFavoriteMovieDto,
+    movie:Movie// CreateFavoriteMovieDto,
   ): Promise<Movie> {
     return this.movieService.create(movie);
   }
 
   @Get(':id')
+  @UseGuards(AuthGuard()) 
   async getMovie(
     @Param('id')
     id: string,
@@ -44,17 +47,19 @@ export class MovieController {
     return this.movieService.findById(id);
   }
 
-  @Put(':id')
+  @Patch(':id')
+  @UseGuards(AuthGuard()) 
   async updateMovie(
     @Param('id')
     id: string,
     @Body()
-    book: UpdateFavoriteMovieDto,
+    movie: Movie//UpdateFavoriteMovieDto,
   ): Promise<Movie> {
-    return this.movieService.updateById(id, book);
+    return this.movieService.updateById(id, movie);
   }
 
   @Delete(':id')
+  @UseGuards(AuthGuard()) 
   async deleteMovie(
     @Param('id')
     id: string,

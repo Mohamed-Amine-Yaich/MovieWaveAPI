@@ -41,6 +41,7 @@ export class CreateFavoriteMovieDto {
   @IsNotEmpty()
   @IsString()
   readonly Poster: string;
+  
   @IsNotEmpty()
   @IsString()
   readonly Rated: string;
