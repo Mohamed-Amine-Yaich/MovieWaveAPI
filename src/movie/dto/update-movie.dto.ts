@@ -3,9 +3,10 @@ import {
   IsNotEmpty,
   IsString,
 } from 'class-validator';
+import { Document } from 'mongoose';
 
 
-export class UpdateFavoriteMovieDto {
+export class UpdateFavoriteMovieDto extends Document {
   @IsNotEmpty()
   @IsString()
   readonly Awards: string;

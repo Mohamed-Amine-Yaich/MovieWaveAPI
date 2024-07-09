@@ -36,7 +36,6 @@ export class MovieService {
     if (!isValidId) {
       throw new BadRequestException('Please enter correct id.');
     }
-  //or findone {imdbID:id} 
     const movie = await this.Movie.findById(id);
 
     if (!movie) {
@@ -55,8 +54,6 @@ export class MovieService {
   }
 
   async deleteById(id: string): Promise<Movie> {
-    //delete from movie collection and from favMovie arry in user document
-
     return await this.Movie.findByIdAndDelete(id);
   }
 }

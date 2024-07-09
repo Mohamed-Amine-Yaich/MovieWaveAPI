@@ -3,8 +3,9 @@ import {
   IsNotEmpty,
   IsString,
 } from 'class-validator';
+import { Document } from 'mongoose';
 
-export class CreateFavoriteMovieDto {
+export class CreateFavoriteMovieDto extends Document {
 
   @IsNotEmpty()
   @IsString()
