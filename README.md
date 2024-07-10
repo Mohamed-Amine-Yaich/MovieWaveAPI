@@ -3,7 +3,7 @@
 </p>
 
 
-# Welcome to your Movie Wave app 👋
+# Welcome to Movie Wave Backend App
 
 This project is a React Native Expo app that allows users to search for movies and view movie details. It uses a Context API for managing the global state, including authentication, movie details, and movie search. The app is structured using a clear and simple file-based navigation with Expo Router.
 
