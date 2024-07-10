@@ -51,20 +51,19 @@ This project is a React Native Expo app that allows users to search for movies a
 ## Features
 
 1. Authentication Module
-    Manages user login and signup.
+   .Manages user login and signup.
 
 2. Movie Module
-    Supports CRUD operations for managing movies.
+   .Supports CRUD operations for managing movies.
 
 3. Favorite Movie Module
-    Allows authenticated users to manage their favorite movies.
+   .Allows authenticated users to manage their favorite movies.
 
 4. JWT Protection
-    Protects movie and favorite routes ensuring only authenticated users can access them.
-
+   .Protects movie and favorite routes ensuring only authenticated users can access them.
 
 5. Input Validation (DTO)
-    Validates input for auth and movie endpoints to ensure data integrity.
+   .Validates input for auth and movie endpoints to ensure data integrity.
 
 
 
